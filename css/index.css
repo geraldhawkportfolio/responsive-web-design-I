@@ -68,27 +68,95 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.navtext {
-    display:flex; 
-    flex-flow: row nowrap; 
-    margin: 0 5%;
-}
 
 
 /* PHONE */
 @media (max-width: 500px){
-
+    
+    .navvy{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   
+    .header-image {
+        display:none;
+    }
+    
+    .thingy{
+        display:none;
+    }
+    
+    .other-logo{
+        display:none;
+    }
+    
+    .serv{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .feat{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
-
 
 /* TABLET */
 @media (max-width: 800px){
-.navtext{
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+    .navvy{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    
+    .thingy{
+        display: flex;
+        flex-direction: column ;
+    };
+    
+    
+    .other-logo {
+        display:none !important;
+    }
+
 }
 
+.buttonstyle{
+    background-color:white; border: 1px black solid; width:80%; padding:20px;
+}
+.padpad{
+    width:50%; padding:10px;
+}
+.addpad{
+    padding: 10px;
+}
+.mainheader{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+
+.other-logo{
+    display: block;
+}
+
+.h1style{
+    font-size: 70px;
+}
+
+.footfoot{
+    font-size: 16px;
+}
+
+.paddy{
+    padding: 10px;
+}
+
+.padwid{
+    width: 33%; padding: 10px;
 }
 
 .boxx{
@@ -99,10 +167,27 @@ h1, h2, h3, h4, h5 {
     margin: 10px;
 }
 
+.navvy {
+    display:flex; 
+    flex-flow: row nowrap;
+    justify-content: space-evenly; 
+    margin: 0 5%;
+}
+
+.thingy {
+    display:none;
+}
+a {
+    color: grey;
+    margin: 0 2%;
+}
+
 section{
     padding:40px;
 }
-
+.navimg{
+    width:100%; text-align:center; display: flex; flex-flow: row nowrap; justify-content:center;
+}
 button{
     background-color: white;
     width:40%;
@@ -220,5 +305,17 @@ margin: auto;
 .imagestuff{
     display: inline;
     width:50%;
+}
+
+.serv{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: flex-start;
+}
+
+.feat{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: flex-start;
 }
 /* Your code starts here! */

@@ -3,12 +3,8 @@
 <html lang="en">
 <head>
   <meta charset=utf-8>
-<meta http-equiv=X-UA-Compatible content='IE=edge'>
-<meta name='format-detection' content='telephone=no' />
-<meta name='msapplication-tap-highlight' content='no' />
-<meta name='viewport' content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width' />
- <meta name='theme-color' content='#1AFF8C'>    
-<meta name='msapplication-TileColor' content='#1AFF8C'>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+ 
 
   <title>Great Idea!</title>
 
@@ -23,37 +19,39 @@
   <body>
 
     <div  class='container'>
+    
+      <img class="thingy" src="img/logo.png" alt="Great Idea! Company logo.">
+    
       <nav class='navvy'>
-<span class='navtext'>
-  <span class='chicken'>Services</span>
-  <span class='chicken'>Product</span>
-  <span class='chicken'>Vision</span>
-  <span class='chicken'>Features</span>
-  <span class='chicken'>About</span>
-  <span class='chicken'>Contact</span>
-  <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
-</span>
 
+  <a href='#'>Services</a>
+  <a href='#'>Product</a>
+  <a href='#'>Vision</a>
+  <a href='#'>Features</a>
+  <a href='#'>Contact</a>
+    <div>
+  <img class="other-logo" src="img/logo.png" alt="Great Idea! Company logo.">
+  </div>
+
+     </nav>
+    
 
   
-</span>      </nav>
-
-  
-    <header style='display: flex; flex-flow: row wrap; justify-content: center;' >
+    <header class='mainheader'>
 
           <span>
-      <h1 style='font-size: 70px;'>
+      <h1 class='h1style'>
   Innovation<br>
   On<br>
   Demand
       </h1>
 
-      <button style='background-color:white; border: 1px black solid; width:80%; padding:20px;'>
+      <button class='buttonstyle'>
   Get Started
     </button>
           </span>
 
-          <span>
+          <span class='header-image'>
   <img src="img/header-img.png" alt="Image of a code snippet.">
           </span>
       </header>
@@ -63,16 +61,16 @@
 <br><br>
 <hr />
 
-<section class='feat' style='display: flex; flex-flow: row wrap; justify-content: flex-start;'>
+<section class='feat' >
 
-      <span style='width:50%; padding:10px;'>
-  <h2>Features</h2>
+      <span class='padpad'>
+        <h2>Info</h2>
       <p>
   Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
       </p>
       </span>
 
-      <span style='width:50%; padding:10px;'>
+      <span class='padpad'>
   <h2>About</h2>
       <p>
   Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.<br><br><br><br>
@@ -82,7 +80,7 @@
 
 </section>
 
-<section style='padding: 10px;'>
+<section class='paddy'>
 
       <span>
   <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen" />
@@ -91,9 +89,9 @@
 </section>
   
 
-  <section class='serv' style='display: flex; flex-flow: row wrap; justify-content: flex-start;'>
+  <section class='serv'>
 
-        <span style='width: 33%; padding: 10px;'>
+        <span class='padwid'>
   <h2>Services</h2>
 
     <p>
@@ -103,7 +101,7 @@
         </span>
 
 
-        <span style='width: 33%; padding: 10px;'>
+        <span class='padwid'>
   <h2>Product</h2>
 
       <p>
@@ -111,7 +109,7 @@
       </p>
         </span>
 
-        <span style='width: 33%; padding: 10px;'>
+        <span class='padwid'>
   <h2>Vision</h2>
 
     <p>
@@ -139,7 +137,7 @@
 </span>
 <br>
 <footer>
-  <small style='font-size: 16px;'>Copyright Great Idea! 2018</small>
+  <small class='footfoot'>Copyright Great Idea! 2018</small>
 
 </footer>
   </div>
