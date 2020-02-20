@@ -1,3 +1,561 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+*{
+box-sizing: border-box;
+padding:0;
+margin:0;
+max-width:100%;
+text-decoration: none;
+/* border: 1px black solid !important; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
 
 
+.navlinks{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlinks .navvy a {
+    margin-left: 20px;
+    color:grey;
+
+}
+
+.topimage {
+    display: none;
+}
+
+/* Tablet */
+@media(max-width: 800px){
+
+
+.topimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoS {
+    display:none;
+}
+
+}
+
+
+
+/* Phone */
+@media(max-width: 300px){
+
+.navvy{
+    margin: 0 auto;
+    text-align:center;
+}
+
+.navlinks .navvy {
+    border: 1px black solid;
+}
+
+.coloring{
+    border: 1px black solid;
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.navlinks{
+    .column { 
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+        }
+}
+
+} /* END PHONE  */
+
+.boxx{
+   
+    width: 40%;
+    padding:20px;
+    border: 1px black solid;
+    margin: 10px;
+}
+
+section{
+    padding:40px;
+}
+
+
+
+button{
+    background-color: white;
+    width:40%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: 40px;
+
+}
+
+p{
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+.features{
+    margin-bottom: 10px !important;
+}
+
+.navvy{
+    display: block;
+    margin-bottom: 10%;
+    position: absolute;
+    top:0;
+    position: sticky;
+    margin-left: 20%;
+}
+
+.feat{
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+}
+
+.serv{
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+}
+
+.navtext{
+color:grey;
+margin: 0 auto !important;
+display:flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+}
+
+.navvy .navtext .chicken{
+text-align: center !important;
+}
+
+.navimg{
+    margin-left: 2%;
+}
+
+footer{
+    margin-top: 10%;
+    text-align:center;
+    color:black;
+}
+
+.addressy{
+    display: inline-block;
+    margin: 0 auto !important;
+
+}
+
+hr{
+    border: 1px grey solid; width:100%;
+}
+
+.navvy .navtext .chicken{
+    margin: 0 1%;
+}
+
+.container{
+    padding: 0px 10%;
+    bacground-color: grey !important;
+}
+
+.btnstuff{
+    background-color: white !important;
+    border: 2px groove grey ;
+    padding: 10px;
+    width:80%;
+    margin: auto;
+}
+
+.floatimg{
+display:flex !important;
+flex-flow: row wrap !important;
+width:40%;
+margin: auto;
+}
+
+.floattext{
+display:flex !important;
+flex-flow: row wrap !important;
+width: 40%;
+margin: auto;
+}
+
+.textstuff{
+    display: inline;
+    width:50%;
+    font-size: 80px !important;
+}
+
+.imagestuff{
+    display: inline;
+    width:50%;
+}
+/* Your code starts here! */
+
+/* PHONE */
+@media (max-width: 500px){
+    
+    .navvy{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   
+    .header-image {
+        display:none;
+    }
+    
+    .thingy{
+        display:none;
+    }
+    
+    .other-logo{
+        display:none;
+    }
+    
+    .serv{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .feat{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .expand{
+        width: 100%;
+    }
+}
+
+/* TABLET */
+@media (max-width: 800px){
+   
+    
+ .navlinks{
+     flex-direction:column;
+     align-content:center;
+     
+ }
+ 
+ .navvy{
+    width:100%;
+    
+}
+        .logoS{
+            width: 40%;
+            
+        }
+
+}
+
+/* END QUery */
+
+.other-logo{
+display:inline;    
+}
+.buttonstyle{
+    background-color:white; border: 1px black solid; width:80%; padding:20px;
+}
+
+
+.thingy{
+    background-color:blue;
+}
+
+.padpad{
+    width:50%; padding:10px;
+}
+.addpad{
+    padding: 10px;
+}
+.mainheader{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+
+.other-logo{
+    display: block;
+}
+
+.h1style{
+    font-size: 70px;
+}
+
+.footfoot{
+    font-size: 16px;
+}
+
+.paddy{
+    padding: 10px;
+}
+
+.padwid{
+    width: 33%; padding: 10px;
+}
+
+.boxx{
+    background-color: lightgrey;
+    width: 40%;
+    padding:20px;
+    border: 1px black solid;
+    margin: 10px;
+}
+
+.navvy {
+    display:flex; 
+    flex-flow: row nowrap;
+    justify-content: space-evenly; 
+    margin: 0 5%;
+}
+
+
+
+a {
+    color: grey;
+    margin: 0 2%;
+}
+
+section{
+    padding:40px;
+}
+.navimg{
+    width:100%; text-align:center; display: flex; flex-flow: row nowrap; justify-content:center;
+}
+button{
+    background-color: white;
+    width:40%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: 40px;
+
+}
+
+p{
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+.features{
+    margin-bottom: 10px !important;
+}
+
+.navvy{
+    display: block;
+    margin-bottom: 10%;
+    position: absolute;
+    top:0;
+    position: sticky;
+    margin-left: 20%;
+}
+
+.feat{
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+}
+
+.serv{
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+}
+
+.navtext{
+color:grey;
+margin: 0 auto !important;
+display:flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+}
+
+.navvy .navtext .chicken{
+text-align: center !important;
+}
+
+.navimg{
+    margin-left: 2%;
+}
+
+footer{
+    margin-top: 10%;
+    text-align:center;
+    color:black;
+}
+
+.addressy{
+    display: inline-block;
+    margin: 0 auto !important;
+
+}
+
+hr{
+    border: 1px grey solid; width:100%;
+}
+
+.navvy .navtext .chicken{
+    margin: 0 1%;
+}
+
+.container{
+    padding: 0px 10%;
+}
+
+.btnstuff{
+    background-color: white !important;
+    border: 2px groove grey ;
+    padding: 10px;
+    width:80%;
+    margin: auto;
+}
+
+.floatimg{
+display:flex !important;
+flex-flow: row wrap !important;
+width:40%;
+margin: auto;
+}
+
+.floattext{
+display:flex !important;
+flex-flow: row wrap !important;
+width: 40%;
+margin: auto;
+}
+
+.textstuff{
+    display: inline;
+    width:50%;
+    font-size: 80px !important;
+}
+
+.imagestuff{
+    display: inline;
+    width:50%;
+}
+
+.serv{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: flex-start;
+}
+
+.feat{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: flex-start;
+}
+/* Your code starts here! */
